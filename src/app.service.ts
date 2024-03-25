@@ -19,4 +19,9 @@ export class AppService {
     }
   }
 
+  processSensor(sensor: string) {
+    this.sensorInstancesService.getInstance(sensor).processData({});
+    return `Processing sensor ${sensor}`;
+  }
+
 }

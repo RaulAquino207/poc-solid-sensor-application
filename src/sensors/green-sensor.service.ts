@@ -10,8 +10,9 @@ export class GreenSensorService implements SensorConsumer<any>, SensorLayer<any>
 
     processData(data: any): void {
         this.logger.log('🟩 Green Sensor Process Data 🟩');
+        this.createOrUpdateLayer(data);
     }
     createOrUpdateLayer(data: any): void {
-        this.logger.log('createOrUpdateLayer');
+        this.logger.log('🗺️ processing 🟩 layer 🗺️');
     }
 }
