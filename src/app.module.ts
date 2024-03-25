@@ -7,7 +7,7 @@ import { SensorInstancesService } from 'src/sensors/sensor-instances.service';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://root:root.pocroot@localhost:27017/poc?authSource=admin&readPreference=primary&directConnection=true&ssl=false'),
+    // MongooseModule.forRoot('mongodb://root:root.pocroot@localhost:27017/poc?authSource=admin&readPreference=primary&directConnection=true&ssl=false'),
     ScheduleModule.forRoot(),
   ],
   controllers: [AppController],

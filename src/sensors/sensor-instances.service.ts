@@ -1,6 +1,7 @@
 import { Injectable, Logger } from "@nestjs/common";
 import { BlueSensorService } from "src/sensors/blue-sensor.service";
 import { GreenSensorService } from "src/sensors/green-sensor.service";
+import { OrangeSensorService } from "src/sensors/orange-sensor.service";
 import { PurpleSensorService } from "src/sensors/purple-sensor.service";
 import { RedSensorService } from "src/sensors/red-sensor.service";
 
@@ -16,6 +17,7 @@ export class SensorInstancesService {
         this.instances.set('BlueSensorService', new BlueSensorService());
         this.instances.set('RedSensorService', new RedSensorService());
         this.instances.set('PurpleSensorService', new PurpleSensorService());
+        this.instances.set('OrangeSensorService', new OrangeSensorService());
     }
 
     getInstance(key: string): any {
